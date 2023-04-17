@@ -24,8 +24,11 @@ int main() {
 
     while (true) {
         for (int i = 0; i < width; i += 2) {
-            if (killswitch[i])
+            if (killswitch[i]) {
+                std::cout << "\033[32m";
                 std::cout << chars[rand() % chars.size()] << " ";
+                std::cout << "\033[0m";
+            }    
             else
                 std::cout << "  ";
         }
