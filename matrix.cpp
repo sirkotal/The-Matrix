@@ -20,7 +20,7 @@ int main() {
     const std::string chars = "1234567890qwertyuiopasdfghjklzxcvbnm./[]!?@#$^&*-=_+";
     bool killswitch[width] = {};
 
-    system("color a");
+    //system("color a");
 
     while (true) {
         for (int i = 0; i < width; i += 2) {
